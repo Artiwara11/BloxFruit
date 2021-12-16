@@ -11,10 +11,6 @@ main1:addToggle("Auto Farm", _G.AutoFarm, function(value)
 _G.AutoFarm = value
 end)
 
-misc1:addButton("FPS Boost", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Artiwara11/-FPS-Boost/main/.gitignore"))()
-end)
-
 function checklevel()
     local Level = game:GetService("Players").LocalPlayer.Data.Level.Value
     if Level == 1 or Level <= 9 then
@@ -212,7 +208,9 @@ local dungeon1 = dungeon:addSection("Auto Buy Chips")
 local misc = venyx:addPage("Misc", 5012544693)
 local misc1 = misc:addSection("Server")
 
-
+misc1:addButton("FPS Boost", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Artiwara11/-FPS-Boost/main/.gitignore"))()
+end)
 
 -- Setting
 
