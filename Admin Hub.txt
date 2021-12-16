@@ -7,6 +7,10 @@ local venyx = library.new("Admin Hub", 5013109572)
 local main = venyx:addPage("Main", 5012544693)
 local main1 = main:addSection("Auto Farm")
 
+misc1:addButton("FPS Boost", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Artiwara11/-FPS-Boost/main/.gitignore"))()
+end)
+
 main1:addToggle("Auto Farm", _G.AutoFarm, function(value)
 _G.AutoFarm = value
 end)
@@ -208,9 +212,7 @@ local dungeon1 = dungeon:addSection("Auto Buy Chips")
 local misc = venyx:addPage("Misc", 5012544693)
 local misc1 = misc:addSection("Server")
 
-misc1:addButton("FPS Boost", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Artiwara11/-FPS-Boost/main/.gitignore"))()
-end)
+
 
 -- Setting
 
